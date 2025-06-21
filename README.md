@@ -18,6 +18,42 @@ The **Airbnb Clone Project** is a comprehensive full-stack development initiativ
 ### Backend:
 - **Django** – High-level Python Web framework for rapid development
 - **MySQL** – Relational database system to store and manage data
+- ## Technology Stack
+
+This project utilizes a modern and scalable technology stack to replicate a full-featured booking platform. Each component is chosen to fulfill a specific responsibility within the architecture:
+
+### 1. **Django**
+A high-level Python web framework used to build secure, maintainable, and scalable web applications quickly.  
+**Purpose:** Handles backend development, URL routing, authentication, and serves as the foundation for RESTful API or GraphQL endpoints.
+
+### 2. **MySQL**
+A widely used open-source relational database management system.  
+**Purpose:** Stores structured data such as users, listings, bookings, and reviews with relational integrity and optimized queries.
+
+### 3. **GraphQL** (optional/advanced)
+A query language for APIs that allows clients to request exactly the data they need.  
+**Purpose:** Enables flexible and efficient data retrieval compared to traditional REST endpoints.
+
+### 4. **Docker**
+A containerization platform that allows developers to package applications with all dependencies into portable containers.  
+**Purpose:** Ensures consistent environments across development, testing, and deployment stages.
+
+### 5. **Git & GitHub**
+Version control system (Git) and hosting service (GitHub) for managing source code and collaboration.  
+**Purpose:** Tracks code changes, manages branches, and supports team collaboration through pull requests and issue tracking.
+
+### 6. **GitHub Actions**
+An automation tool provided by GitHub to implement CI/CD pipelines.  
+**Purpose:** Automatically builds, tests, and deploys code when changes are pushed to the repository, reducing manual effort and improving reliability.
+
+### 7. **Markdown**
+A lightweight markup language used for creating formatted text.  
+**Purpose:** Provides clear and readable project documentation such as `README.md`, guides, and API docs.
+
+---
+
+These technologies work together to create a robust, secure, and maintainable Airbnb-like platform, focusing on real-world software engineering practices.
+
 - **GraphQL (optional/advanced)** – For flexible, efficient API querying
 
 ### DevOps / Deployment:
