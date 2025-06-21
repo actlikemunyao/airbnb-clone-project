@@ -204,3 +204,50 @@ Automated testing, building, and deployment of code changes using GitHub Actions
 ---
 
 These features collectively provide a comprehensive and functional Airbnb-like platform while also reinforcing modern software engineering principles.
+## API Security
+
+Securing the backend APIs is critical for protecting user data, maintaining platform integrity, and ensuring trust between users and the system. The Airbnb Clone Project will implement several key security measures to safeguard the application:
+
+### 🔐 1. Authentication
+**Description:** Verifies the identity of users accessing the system, typically using secure methods like JWT (JSON Web Tokens) or session-based authentication.
+
+**Why it matters:** Prevents unauthorized access and ensures that only registered users can log in, make bookings, manage properties, or perform transactions.
+
+---
+
+### 🛡️ 2. Authorization
+**Description:** Ensures that authenticated users have appropriate permissions to perform specific actions based on their role (guest, host, admin).
+
+**Why it matters:** Protects system integrity by enforcing role-based access controls—e.g., guests shouldn't be able to delete properties, and hosts shouldn't view other users’ bookings.
+
+---
+
+### ⚙️ 3. Input Validation and Sanitization
+**Description:** Validates and cleans incoming data to prevent injection attacks, such as SQL injection or cross-site scripting (XSS).
+
+**Why it matters:** Shields the application from malicious payloads that could compromise the system or expose sensitive data.
+
+---
+
+### 📈 4. Rate Limiting and Throttling
+**Description:** Limits the number of requests a user or IP can make in a specific time period.
+
+**Why it matters:** Prevents abuse, brute-force attacks, and helps maintain server performance under high traffic conditions.
+
+---
+
+### 🧾 5. Secure Payment Handling
+**Description:** If integrating payment systems (e.g., Stripe), use HTTPS, tokenization, and PCI-compliant gateways.
+
+**Why it matters:** Ensures that sensitive financial information is never exposed or stored insecurely, protecting users from fraud.
+
+---
+
+### 🔒 6. HTTPS & Secure Headers
+**Description:** Enforces HTTPS communication and adds security headers like `Content-Security-Policy`, `X-Frame-Options`, and `Strict-Transport-Security`.
+
+**Why it matters:** Protects data in transit and reduces vulnerabilities to common web exploits.
+
+---
+
+By integrating these security measures, the Airbnb Clone Project aims to provide a trustworthy and resilient platform, ensuring data privacy, secure transactions, and compliance with best practices in modern web development.
