@@ -18,6 +18,51 @@ The **Airbnb Clone Project** is a comprehensive full-stack development initiativ
 ### Backend:
 - **Django** – High-level Python Web framework for rapid development
 - **MySQL** – Relational database system to store and manage data
+- ## Database Design
+
+The database for this project is designed using a relational model to reflect real-world relationships between users, properties, bookings, reviews, and payments. Below is an overview of the core entities and their attributes, along with the relationships among them.
+
+### 🧑‍💼 Users
+**Description:** Represents people using the platform, either as guests or hosts.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `name`
+- `email` (Unique)
+- `password_hash`
+- `user_type` (host or guest)
+
+**Relationships:**
+- A user can create multiple properties (if host).
+- A user can make multiple bookings (if guest).
+- A user can write multiple reviews.
+
+---
+
+### 🏠 Properties
+**Description:** Listings created by hosts that guests can book.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `owner_id` (Foreign Key → Users.id)
+- `title`
+- `description`
+- `location`
+
+**Relationships:**
+- Each property belongs to one host (User).
+- A property can have multiple bookings.
+- A property can have multiple reviews.
+
+---
+
+### 📅 Bookings
+**Description:** Represents a reservation made by a guest for a property.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id`_
+
 - ## Technology Stack
 
 This project utilizes a modern and scalable technology stack to replicate a full-featured booking platform. Each component is chosen to fulfill a specific responsibility within the architecture:
