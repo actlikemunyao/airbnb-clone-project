@@ -170,3 +170,37 @@ In a collaborative software development environment, each team member plays a vi
 ---
 
 These roles ensure clear accountability, efficient collaboration, and high-quality software development throughout the project lifecycle.
+## Feature Breakdown
+
+The Airbnb Clone project consists of several core features designed to simulate a real-world booking platform. Each feature is built with scalability, security, and usability in mind.
+
+### 1. **User Management**
+Enables user registration, login, and authentication for both guests and hosts. Secure password handling, role-based access control, and session management ensure a safe user experience.
+
+### 2. **Property Management**
+Allows hosts to create, update, and delete property listings. Properties can include information such as location, description, pricing, and availability, making them searchable and bookable by guests.
+
+### 3. **Booking System**
+Facilitates the reservation of properties by guests. Handles date availability checks, booking validation, and confirmation notifications to ensure seamless transactions.
+
+### 4. **Review and Rating System**
+Lets guests leave feedback on properties after their stay. Hosts can view ratings and comments, which help future users make informed booking decisions.
+
+### 5. **Payment Integration**
+Simulates or integrates secure payment processing for bookings. Ensures payment status tracking, receipt generation, and association with the correct bookings.
+
+### 6. **Admin Panel / Dashboard**
+Provides administrative access for hosts to manage listings and bookings. May also include a simplified interface for site administrators to monitor system health and user activity.
+
+### 7. **Search and Filter**
+Enables users to search for properties using filters like location, price, and availability. Enhances user experience by helping guests quickly find suitable listings.
+
+### 8. **API Security & Authorization**
+Includes authentication (JWT or session-based), role-based permissions, and input validation to prevent unauthorized access and ensure secure data transactions.
+
+### 9. **CI/CD Integration**
+Automated testing, building, and deployment of code changes using GitHub Actions. This feature improves development efficiency and ensures code reliability.
+
+---
+
+These features collectively provide a comprehensive and functional Airbnb-like platform while also reinforcing modern software engineering principles.
